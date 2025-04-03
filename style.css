@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    background:#00ffff;
+}
+
+.todo {
+    font-size: 1.3rem;
+}
+
+p {
+    font-size: 1.0rem;
+}

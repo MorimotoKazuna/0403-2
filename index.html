@@ -4,37 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Gitを用いたファイルバージョン管理</h1>
-    <p>◆GitHubからGit(Bash)へ
+    <div class="section">
+        <div class="subtitle">◆GitHubからGit(Bash)へ</div>
 
-        <br>【Gitクライアントの初期設定】
-        <br>    git config --global user.name "NAME"　※自分の名前
-        <br>    git congig --global user.email "E-MAIL" ※自分のメールアドレス
-        <br>
-        <br>【リモートレポジトリからクローンをローカルレポジトリへ】
-        <br>    git clone　https://~.git　※GitHubの <>Code で出てきたURLを入力
-        <br>
-        <br>【作業完了後、ローカルレポジトリへコミット】
-        <br>    git add .
-        <br>    git commit -m "○○のために○○をしました"　※編集の概要や意図を記述
-        <br>
-        <br>【ローカルレポジトリからリモートレポジトリへ】
-        <br>    git push
-        <br>
-        <br>
-        <br>◆GitHubのレポジトリ新規作成
-        <br>
-        <br>① New　もしくは　repository　の緑色のボタンをクリック
-        <br>②
-        <br>●Repository name *
-    　  <br>●Description
-        <br>●Public ※個人利用の場合はpublicでOK
-        <br>●☑Add a README file
-        <br>
-        <br> Create repository の緑のボタンをクリック
-        </p>
+            <div class="todo">【Gitクライアントの初期設定】
+                <p>    git config --global user.name "NAME"　※自分の名前</p>
+                <p>    git congig --global user.email "E-MAIL" ※自分のメールアドレス</p>
+            </div>
+
+            <div>【リモートレポジトリからクローンをローカルレポジトリへ】
+                <p>    git clone　https://~.git　※GitHubの <>Code で出てきたURLを入力　</p>
+            </div>
+
+            <div class="todo">【作業完了後、ローカルレポジトリへコミット】
+                <p>    git add .</p>
+                <p>    git commit -m "○○のために○○をしました"　※編集の概要や意図を記述</p>
+            </div>
+
+            <div class="todo">【ローカルレポジトリからリモートレポジトリへ】
+                <p>    git push</p>
+            </div>
+
+            <div class="todo">【競合発生時は、リモートレポジトリからプルし統合させる】
+                <p>git pull --no-edit</p>
+            </div> 
+
+    </div>
+
+    <div class="section">
+        <div class="subtitle">◆GitHubのレポジトリ新規作成</div>
+            <p>① New　もしくは　repository　の緑色のボタンをクリック</p>
+            <p>②</p>
+            <p>●Repository name *</p>
+        　  <p>●Description</p>
+            <p>●Public ※個人利用の場合はpublicでOK</p>
+            <p>●☑Add a README file</p>
+            <p> Create repository の緑のボタンをクリック</p>
+    </div>
     
 </body>
 </html>
