@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gitリファレンス</title>
+</head>
+<body>
+    <div>構成</div>
+    <p　class='square sq1'>リモートレポジトリ</p>
+    <p　class='square sq2'>ローカルレポジトリ</p>
+    <p　class='square sq3'>ステージ</p>
+    <p　class='square sq4'>ワークツリー</p>
+    
+    <div>初期設定</div>
+    <p>git config --global user.name ""</p>
+    <p>git config --global user.email ""</p>
+
+    <div>リモートレポジトリからプロジェクトのクローンをローカルレポジトリへ新規作成</div>
+        <p>git clone　レポジトリURL フォルダ名</p>
+
+    <div>ワークツリーからステージ登録 ※フォルダ、ファイル名を指定した場合、指定したもののみステージへあげる</div>
+        <p>git add . もしくは　git add フォルダorファイル</p>
+
+    <div>ステージからワークツリーへ取り下げ</div>
+        <p>git reset</p>
+
+    <div>ステージからローカルレポジトリへコミット</div>
+        <p>git commit -m "コミットコメント" もしくは git commmit -am "コミットコメント"</p>
+
+    <div>ローカルレポジトリからリモートレポジトリへプッシュ ※競合発生時は失敗する</div>
+        <p>git push</p>
+
+    <div>リモートレポジトリの最新バージョンをローカルレポジトリへ落とし込む ※競合発生時に活用</div>
+        <p>git pull --no--edit</p>
+
+    <div>ワークツリーとステージの状態確認 ※何をステージにあげたか分からなくなった際に活用</div>
+        <p>git status</p>
+
+    <div>commit履歴の確認 ※何をローカルレポジトリへあげたか分からなくなった際に活用
+        <br>※確認したい件数を省略した場合、最大件数が出てくるので注意。--onelineを省略した場合、詳細に表示される
+    </div>
+        <p>git log -確認したい件数 --oneline ファイル名</p>
+
+    <div>直前コミットコメントの訂正</div>
+        <p>git commit --amend -m "新コミットコメント"</p>
+
+    <div>直前コミットの取消</div>
+        <p>git reset --soft HEAD^</p>
+
+    <div>ブランチ(パラレルワールド)作成</div>
+        <p>git branch ブランチ名</p>
+        
+    <div>現在のブランチを変更</div>
+        <p>git checkout ブランチ名</p>
+
+    <div>ブランチのマージ(統合)</div>
+        <p>git merge ブランチ名</p>
+
+    <div>フェッチ（リモートレポジトリから最新バージョンを取得し、ローカルレポジトリへ反映）</div>
+        <p>git fetch</p>
+
+</body>
+</html>
